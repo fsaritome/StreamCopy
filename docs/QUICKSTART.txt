@@ -1,0 +1,59 @@
+StreamCopy - quick start (Windows x64)
+=====================================
+
+StreamCopy has two parts: a receiver on the file server and the client on the PC. Both are the same scopy.exe.
+Client and receiver must be the same version (scopy --version). Status: research and development project, written
+mostly with AI and not yet reviewed by a human. Try it on test servers and test data first. Free for non-commercial
+use (LICENSE.md).
+
+1. On the file server (the machine that hosts the share)
+--------------------------------------------------------
+Copy scopy.exe to a folder that stays, e.g. C:\Program Files\scopy, then in an elevated (admin) prompt:
+
+    scopy service install
+
+It runs as a Windows service, finds the server's published shares by itself and listens on TCP 7788.
+Allow TCP 7788 in the Windows firewall for your clients. Never expose this port to the internet.
+Log: scopy-service.log next to scopy.exe. Remove it again with:  scopy service uninstall
+
+2. On the PC: copy
+------------------
+    scopy send C:\Projects\demo \\fileserver\share\demo     (push: PC -> server)
+    scopy get  \\fileserver\share\demo D:\demo              (pull: server -> PC)
+
+You can only write or read where your own Windows account may already do so over SMB: the receiver checks that
+through SMB and then writes as you. Everything travels over TLS. Run it again and only changes are sent.
+Useful options: --profile interactive (light, quick feedback), --stage auto (server takes the data into RAM first),
+--verify (check every piece after writing). All options: scopy send --help
+
+3. Sync (in development)
+------------------------
+On the file server, create scopy.toml next to scopy.exe:
+
+    [sync]
+    root    = 'D:\SyncUsers'                        # inside a share; each user gets <root>\<username>
+    folders = ['Desktop', 'Documents', 'Downloads'] # the folders users may sync
+    # lock_minutes = 120                            # how long an Office file stays locked after a PC went silent
+    # recycle_days = 30                             # how long deleted files stay in the users' recycle bins
+
+On each PC, as the user:
+
+    scopy sync enable --server fileserver --folder Downloads
+
+and once, in an elevated prompt (from a folder that stays, e.g. C:\Program Files\scopy, with scopyw.exe next to it):
+
+    scopy sync service install
+
+The service starts the sync for every user who logs on; scopyw.exe shows a light in the notification area
+(green up to date, blue syncing, orange waiting/paused, red retrying) with a status window and options.
+Changes on the PC go up within seconds; changes on the server (another PC, a terminal server) come down within
+about a second. Deleted files go into a recycle bin on the side where they disappeared (kept 30 days).
+Note: folders that are redirected to a network share (folder redirection) cannot be synced.
+
+Windows SmartScreen
+-------------------
+The exes are not code-signed, so Windows may say "Windows protected your PC". Check the SHA-256 against
+SHA256SUMS.txt, then "More info" -> "Run anyway".
+
+More: README.md, and on GitHub BENCHMARKS.md, DESIGN-SYNC.md and DESIGN-TLS.md.
+https://github.com/fsaritome/StreamCopy

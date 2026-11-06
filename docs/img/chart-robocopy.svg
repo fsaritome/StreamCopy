@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 356" width="780" height="356" role="img" aria-labelledby="t s">
+  <title id="t">Many small files over the network: robocopy /MT:32 vs scopy</title><desc id="s">Same data, same link, fresh destination. Shorter is better.</desc>
+
+  <style>
+    .surface { fill: none; }
+    .title { font: 700 19px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .sub { font: 400 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    .lab { font: 500 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .val { font: 600 12.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .note { font: 400 11.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #6b6a66; }
+    .grid { stroke: #e4e3df; stroke-width: 1; }
+    .axis { stroke: #b9b8b2; stroke-width: 1; }
+    .s1 { fill: #2a78d6; } .s2 { fill: #eb6834; }
+    .ref { stroke: #52514e; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .reflab { font: 600 12px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    @media (prefers-color-scheme: dark) {
+      .title, .lab, .val { fill: #f0efec; } .sub { fill: #c3c2b7; } .note { fill: #9e9d96; }
+      .grid { stroke: #33332f; } .axis { stroke: #5a5953; }
+      .s1 { fill: #3987e5; } .s2 { fill: #d95926; }
+      .ref { stroke: #c3c2b7; } .reflab { fill: #c3c2b7; }
+    }
+  </style>
+
+  <rect class="surface" width="780" height="356"/>
+  <text class="title" x="16" y="30">Many small files over the network: robocopy /MT:32 vs scopy</text>
+  <text class="sub" x="16" y="52">Same data, same link, fresh destination. Shorter is better.</text>
+  <rect class="s1" x="16" y="64" width="14" height="14" rx="3"/>
+  <text class="lab" x="36" y="76">scopy</text>
+  <rect class="s2" x="109" y="64" width="14" height="14" rx="3"/>
+  <text class="lab" x="129" y="76">robocopy /MT:32</text>
+  <line class="grid" x1="250.0" y1="82" x2="250.0" y2="300"/>
+  <text class="note" x="250.0" y="316" text-anchor="middle">0</text>
+  <line class="grid" x1="313.1" y1="82" x2="313.1" y2="300"/>
+  <text class="note" x="313.1" y="316" text-anchor="middle">2:00 min</text>
+  <line class="grid" x1="376.2" y1="82" x2="376.2" y2="300"/>
+  <text class="note" x="376.2" y="316" text-anchor="middle">4:00 min</text>
+  <line class="grid" x1="439.2" y1="82" x2="439.2" y2="300"/>
+  <text class="note" x="439.2" y="316" text-anchor="middle">6:00 min</text>
+  <line class="grid" x1="502.3" y1="82" x2="502.3" y2="300"/>
+  <text class="note" x="502.3" y="316" text-anchor="middle">8:00 min</text>
+  <line class="grid" x1="565.4" y1="82" x2="565.4" y2="300"/>
+  <text class="note" x="565.4" y="316" text-anchor="middle">10:00 min</text>
+  <line class="grid" x1="628.5" y1="82" x2="628.5" y2="300"/>
+  <text class="note" x="628.5" y="316" text-anchor="middle">12:00 min</text>
+  <line class="axis" x1="250" y1="82" x2="250" y2="300"/>
+  <text class="lab" x="238" y="112.0" text-anchor="end">496 MB real-world files, 8,585 files</text>
+  <path class="s1" d="M250,88 H257.14358974358976 Q261.14358974358976,88 261.14358974358976,92 V102 Q261.14358974358976,106 257.14358974358976,106 H250 Z"><title>496 MB real-world files, 8,585 files — scopy: 21 s</title></path>
+  <text class="val" x="267.1" y="101.5">21 s</text>
+  <path class="s2" d="M250,108 H430.9730769230769 Q434.9730769230769,108 434.9730769230769,112 V122 Q434.9730769230769,126 430.9730769230769,126 H250 Z"><title>496 MB real-world files, 8,585 files — robocopy /MT:32: 5:52 min</title></path>
+  <text class="val" x="441.0" y="121.5">5:52 min</text>
+  <text class="val" x="764" y="112.0" text-anchor="end">17× faster</text>
+  <text class="lab" x="238" y="168.0" text-anchor="end">same, scopy without compression</text>
+  <path class="s1" d="M250,144 H291.2576923076923 Q295.2576923076923,144 295.2576923076923,148 V158 Q295.2576923076923,162 291.2576923076923,162 H250 Z"><title>same, scopy without compression — scopy: 1:26 min</title></path>
+  <text class="val" x="301.3" y="157.5">1:26 min</text>
+  <text class="lab" x="238" y="224.0" text-anchor="end">20,003 tiny files, 246 MB</text>
+  <path class="s1" d="M250,200 H282.2692307692308 Q286.2692307692308,200 286.2692307692308,204 V214 Q286.2692307692308,218 282.2692307692308,218 H250 Z"><title>20,003 tiny files, 246 MB — scopy: 1:09 min</title></path>
+  <text class="val" x="292.3" y="213.5">1:09 min</text>
+  <path class="s2" d="M250,220 H633.8179487179486 Q637.8179487179486,220 637.8179487179486,224 V234 Q637.8179487179486,238 633.8179487179486,238 H250 Z"><title>20,003 tiny files, 246 MB — robocopy /MT:32: 12:18 min</title></path>
+  <text class="val" x="643.8" y="233.5">12:18 min</text>
+  <text class="val" x="764" y="224.0" text-anchor="end">11× faster</text>
+  <text class="lab" x="238" y="280.0" text-anchor="end">2,000 tiny files, 17 MB</text>
+  <path class="s1" d="M250,256 H251.5 Q253,256 253,257.5 V272.5 Q253,274 251.5,274 H250 Z"><title>2,000 tiny files, 17 MB — scopy: 5.7 s</title></path>
+  <text class="val" x="259.0" y="269.5">5.7 s</text>
+  <path class="s2" d="M250,276 H287.89358974358976 Q291.89358974358976,276 291.89358974358976,280 V290 Q291.89358974358976,294 287.89358974358976,294 H250 Z"><title>2,000 tiny files, 17 MB — robocopy /MT:32: 1:20 min</title></path>
+  <text class="val" x="297.9" y="289.5">1:20 min</text>
+  <text class="val" x="764" y="280.0" text-anchor="end">14× faster</text>
+  <text class="note" x="16" y="346">BENCHMARKS.md (scopy 0.1–0.3), a routed ~40–70 Mbit/s link. Streaming fills the link; zstd 3 then cuts the bytes ≈ 5×.</text>
+</svg>

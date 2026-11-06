@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 356" width="780" height="356" role="img" aria-labelledby="t s">
+  <title id="t">Filling a 10 Gbit link: 19.1 GB, 85,513 files, between two VMs</title><desc id="s">File data delivered vs bytes on the wire. With compression scopy delivers more data than the link itself could carry.</desc>
+
+  <style>
+    .surface { fill: none; }
+    .title { font: 700 19px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .sub { font: 400 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    .lab { font: 500 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .val { font: 600 12.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .note { font: 400 11.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #6b6a66; }
+    .grid { stroke: #e4e3df; stroke-width: 1; }
+    .axis { stroke: #b9b8b2; stroke-width: 1; }
+    .s1 { fill: #2a78d6; } .s2 { fill: #eb6834; }
+    .ref { stroke: #52514e; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .reflab { font: 600 12px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    @media (prefers-color-scheme: dark) {
+      .title, .lab, .val { fill: #f0efec; } .sub { fill: #c3c2b7; } .note { fill: #9e9d96; }
+      .grid { stroke: #33332f; } .axis { stroke: #5a5953; }
+      .s1 { fill: #3987e5; } .s2 { fill: #d95926; }
+      .ref { stroke: #c3c2b7; } .reflab { fill: #c3c2b7; }
+    }
+  </style>
+
+  <rect class="surface" width="780" height="356"/>
+  <text class="title" x="16" y="30">Filling a 10 Gbit link: 19.1 GB, 85,513 files, between two VMs</text>
+  <text class="sub" x="16" y="52">File data delivered vs bytes on the wire. With compression scopy delivers more data than the link itself could carry.</text>
+  <rect class="s1" x="16" y="64" width="14" height="14" rx="3"/>
+  <text class="lab" x="36" y="76">file data delivered</text>
+  <rect class="s2" x="235" y="64" width="14" height="14" rx="3"/>
+  <text class="lab" x="255" y="76">on the wire</text>
+  <line class="grid" x1="200.0" y1="82" x2="200.0" y2="300"/>
+  <text class="note" x="200.0" y="316" text-anchor="middle">0</text>
+  <line class="grid" x1="273.6" y1="82" x2="273.6" y2="300"/>
+  <text class="note" x="273.6" y="316" text-anchor="middle">2.0 Gbit/s</text>
+  <line class="grid" x1="347.2" y1="82" x2="347.2" y2="300"/>
+  <text class="note" x="347.2" y="316" text-anchor="middle">4.0 Gbit/s</text>
+  <line class="grid" x1="420.8" y1="82" x2="420.8" y2="300"/>
+  <text class="note" x="420.8" y="316" text-anchor="middle">6.0 Gbit/s</text>
+  <line class="grid" x1="494.4" y1="82" x2="494.4" y2="300"/>
+  <text class="note" x="494.4" y="316" text-anchor="middle">8.0 Gbit/s</text>
+  <line class="grid" x1="568.0" y1="82" x2="568.0" y2="300"/>
+  <text class="note" x="568.0" y="316" text-anchor="middle">10.0 Gbit/s</text>
+  <line class="grid" x1="641.6" y1="82" x2="641.6" y2="300"/>
+  <text class="note" x="641.6" y="316" text-anchor="middle">12.0 Gbit/s</text>
+  <line class="axis" x1="200" y1="82" x2="200" y2="300"/>
+  <line class="ref" x1="568.0" y1="60" x2="568.0" y2="300"/>
+  <text class="reflab" x="574.0" y="70">10 Gbit/s link</text>
+  <text class="lab" x="188" y="112.0" text-anchor="end">Compression off</text>
+  <path class="s1" d="M200,88 H535.5743945801348 Q539.5743945801348,88 539.5743945801348,92 V102 Q539.5743945801348,106 535.5743945801348,106 H200 Z"><title>Compression off — file data delivered: 9.2 Gbit/s</title></path>
+  <text class="val" x="545.6" y="101.5">9.2 Gbit/s</text>
+  <path class="s2" d="M200,108 H535.5743945801348 Q539.5743945801348,108 539.5743945801348,112 V122 Q539.5743945801348,126 535.5743945801348,126 H200 Z"><title>Compression off — on the wire: 9.2 Gbit/s</title></path>
+  <text class="val" x="545.6" y="121.5">9.2 Gbit/s</text>
+  <text class="lab" x="188" y="168.0" text-anchor="end">zstd level 1</text>
+  <path class="s1" d="M200,144 H610.0016591456439 Q614.0016591456439,144 614.0016591456439,148 V158 Q614.0016591456439,162 610.0016591456439,162 H200 Z"><title>zstd level 1 — file data delivered: 11.3 Gbit/s</title></path>
+  <text class="val" x="620.0" y="157.5">11.3 Gbit/s</text>
+  <path class="s2" d="M200,164 H438.330107904 Q442.330107904,164 442.330107904,168 V178 Q442.330107904,182 438.330107904,182 H200 Z"><title>zstd level 1 — on the wire: 6.6 Gbit/s</title></path>
+  <text class="val" x="448.3" y="177.5">6.6 Gbit/s</text>
+  <text class="lab" x="188" y="224.0" text-anchor="end">zstd level 3</text>
+  <path class="s1" d="M200,200 H576.1524668884529 Q580.1524668884529,200 580.1524668884529,204 V214 Q580.1524668884529,218 576.1524668884529,218 H200 Z"><title>zstd level 3 — file data delivered: 10.3 Gbit/s</title></path>
+  <text class="val" x="586.2" y="213.5">10.3 Gbit/s</text>
+  <path class="s2" d="M200,220 H416.1036521472 Q420.1036521472,220 420.1036521472,224 V234 Q420.1036521472,238 416.1036521472,238 H200 Z"><title>zstd level 3 — on the wire: 6.0 Gbit/s</title></path>
+  <text class="val" x="426.1" y="233.5">6.0 Gbit/s</text>
+  <text class="lab" x="188" y="280.0" text-anchor="end">zstd 1, written to disk</text>
+  <path class="s1" d="M200,256 H604.4070421301622 Q608.4070421301622,256 608.4070421301622,260 V270 Q608.4070421301622,274 604.4070421301622,274 H200 Z"><title>zstd 1, written to disk — file data delivered: 11.1 Gbit/s</title></path>
+  <text class="val" x="614.4" y="269.5">11.1 Gbit/s</text>
+  <path class="s2" d="M200,276 H434.93439938560005 Q438.93439938560005,276 438.93439938560005,280 V290 Q438.93439938560005,294 434.93439938560005,294 H200 Z"><title>zstd 1, written to disk — on the wire: 6.5 Gbit/s</title></path>
+  <text class="val" x="444.9" y="289.5">6.5 Gbit/s</text>
+  <text class="note" x="16" y="346">Two VMs on two hosts, physical 10 Gbit link (BENCHMARKS.md). First three rows: receiver checks and discards the data (--sink); last row: real writes.</text>
+</svg>

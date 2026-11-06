@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 356" width="780" height="356" role="img" aria-labelledby="t s">
+  <title id="t">A project of 1,975 small files (140 MB): laptop ⇄ file server</title><desc id="s">Wall-clock time incl. scopy's start-up. Windows Explorer (drag &amp; drop) vs scopy --profile interactive.</desc>
+
+  <style>
+    .surface { fill: none; }
+    .title { font: 700 19px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .sub { font: 400 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    .lab { font: 500 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .val { font: 600 12.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .note { font: 400 11.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #6b6a66; }
+    .grid { stroke: #e4e3df; stroke-width: 1; }
+    .axis { stroke: #b9b8b2; stroke-width: 1; }
+    .s1 { fill: #2a78d6; } .s2 { fill: #eb6834; }
+    .ref { stroke: #52514e; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .reflab { font: 600 12px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    @media (prefers-color-scheme: dark) {
+      .title, .lab, .val { fill: #f0efec; } .sub { fill: #c3c2b7; } .note { fill: #9e9d96; }
+      .grid { stroke: #33332f; } .axis { stroke: #5a5953; }
+      .s1 { fill: #3987e5; } .s2 { fill: #d95926; }
+      .ref { stroke: #c3c2b7; } .reflab { fill: #c3c2b7; }
+    }
+  </style>
+
+  <rect class="surface" width="780" height="356"/>
+  <text class="title" x="16" y="30">A project of 1,975 small files (140 MB): laptop ⇄ file server</text>
+  <text class="sub" x="16" y="52">Wall-clock time incl. scopy's start-up. Windows Explorer (drag &amp; drop) vs scopy --profile interactive.</text>
+  <rect class="s1" x="16" y="64" width="14" height="14" rx="3"/>
+  <text class="lab" x="36" y="76">scopy</text>
+  <rect class="s2" x="109" y="64" width="14" height="14" rx="3"/>
+  <text class="lab" x="129" y="76">Windows Explorer</text>
+  <line class="grid" x1="210.0" y1="82" x2="210.0" y2="300"/>
+  <text class="note" x="210.0" y="316" text-anchor="middle">0</text>
+  <line class="grid" x1="294.4" y1="82" x2="294.4" y2="300"/>
+  <text class="note" x="294.4" y="316" text-anchor="middle">1:00 min</text>
+  <line class="grid" x1="378.8" y1="82" x2="378.8" y2="300"/>
+  <text class="note" x="378.8" y="316" text-anchor="middle">2:00 min</text>
+  <line class="grid" x1="463.1" y1="82" x2="463.1" y2="300"/>
+  <text class="note" x="463.1" y="316" text-anchor="middle">3:00 min</text>
+  <line class="grid" x1="547.5" y1="82" x2="547.5" y2="300"/>
+  <text class="note" x="547.5" y="316" text-anchor="middle">4:00 min</text>
+  <line class="grid" x1="631.9" y1="82" x2="631.9" y2="300"/>
+  <text class="note" x="631.9" y="316" text-anchor="middle">5:00 min</text>
+  <line class="axis" x1="210" y1="82" x2="210" y2="300"/>
+  <text class="lab" x="198" y="112.0" text-anchor="end">Save, over Wi-Fi</text>
+  <path class="s1" d="M210,88 H212.109375 Q214.21875,88 214.21875,90.109375 V103.890625 Q214.21875,106 212.109375,106 H210 Z"><title>Save, over Wi-Fi — scopy: 3.0 s</title></path>
+  <text class="val" x="220.2" y="101.5">3.0 s</text>
+  <path class="s2" d="M210,108 H627.875 Q631.875,108 631.875,112 V122 Q631.875,126 627.875,126 H210 Z"><title>Save, over Wi-Fi — Windows Explorer: 5:00 min</title></path>
+  <text class="val" x="637.9" y="121.5">5:00 min</text>
+  <text class="val" x="764" y="112.0" text-anchor="end">100× faster</text>
+  <text class="lab" x="198" y="168.0" text-anchor="end">Open, over Wi-Fi</text>
+  <path class="s1" d="M210,144 H213.7265625 Q217.453125,144 217.453125,147.7265625 V158.2734375 Q217.453125,162 213.7265625,162 H210 Z"><title>Open, over Wi-Fi — scopy: 5.3 s</title></path>
+  <text class="val" x="223.5" y="157.5">5.3 s</text>
+  <path class="s2" d="M210,164 H416.234375 Q420.234375,164 420.234375,168 V178 Q420.234375,182 416.234375,182 H210 Z"><title>Open, over Wi-Fi — Windows Explorer: 2:30 min</title></path>
+  <text class="val" x="426.2" y="177.5">2:30 min</text>
+  <text class="val" x="764" y="168.0" text-anchor="end">28× faster</text>
+  <text class="lab" x="198" y="224.0" text-anchor="end">Save, over cable</text>
+  <path class="s1" d="M210,200 H211.5 Q213,200 213,201.5 V216.5 Q213,218 211.5,218 H210 Z"><title>Save, over cable — scopy: 2.0 s</title></path>
+  <text class="val" x="219.0" y="213.5">2.0 s</text>
+  <path class="s2" d="M210,220 H307.953125 Q311.953125,220 311.953125,224 V234 Q311.953125,238 307.953125,238 H210 Z"><title>Save, over cable — Windows Explorer: 1:12 min</title></path>
+  <text class="val" x="318.0" y="233.5">1:12 min</text>
+  <text class="val" x="764" y="224.0" text-anchor="end">36× faster</text>
+  <text class="lab" x="198" y="280.0" text-anchor="end">Open, over cable</text>
+  <path class="s1" d="M210,256 H213.0234375 Q216.046875,256 216.046875,259.0234375 V270.9765625 Q216.046875,274 213.0234375,274 H210 Z"><title>Open, over cable — scopy: 4.3 s</title></path>
+  <text class="val" x="222.0" y="269.5">4.3 s</text>
+  <path class="s2" d="M210,276 H273.5 Q277.5,276 277.5,280 V290 Q277.5,294 273.5,294 H210 Z"><title>Open, over cable — Windows Explorer: 48 s</title></path>
+  <text class="val" x="283.5" y="289.5">48 s</text>
+  <text class="val" x="764" y="280.0" text-anchor="end">11× faster</text>
+  <text class="note" x="16" y="346">Averages of two runs each (BENCHMARKS.md). The larger project (16,372 files) was not run with Explorer: ≈ 39 min estimated vs 11 s.</text>
+</svg>

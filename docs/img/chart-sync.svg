@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 402" width="780" height="402" role="img" aria-labelledby="t s">
+  <title id="t">Two-way sync over a VPN: until a change is on the other side</title><desc id="s">Live agent on a laptop, server-side changes made over SMB as another machine would (server checked every 15 s).</desc>
+
+  <style>
+    .surface { fill: none; }
+    .title { font: 700 19px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .sub { font: 400 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    .lab { font: 500 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .val { font: 600 12.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .note { font: 400 11.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #6b6a66; }
+    .grid { stroke: #e4e3df; stroke-width: 1; }
+    .axis { stroke: #b9b8b2; stroke-width: 1; }
+    .s1 { fill: #2a78d6; } .s2 { fill: #eb6834; }
+    .ref { stroke: #52514e; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .reflab { font: 600 12px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    @media (prefers-color-scheme: dark) {
+      .title, .lab, .val { fill: #f0efec; } .sub { fill: #c3c2b7; } .note { fill: #9e9d96; }
+      .grid { stroke: #33332f; } .axis { stroke: #5a5953; }
+      .s1 { fill: #3987e5; } .s2 { fill: #d95926; }
+      .ref { stroke: #c3c2b7; } .reflab { fill: #c3c2b7; }
+    }
+  </style>
+
+  <rect class="surface" width="780" height="402"/>
+  <text class="title" x="16" y="30">Two-way sync over a VPN: until a change is on the other side</text>
+  <text class="sub" x="16" y="52">Live agent on a laptop, server-side changes made over SMB as another machine would (server checked every 15 s).</text>
+  <line class="grid" x1="270.0" y1="64" x2="270.0" y2="346"/>
+  <text class="note" x="270.0" y="362" text-anchor="middle">0</text>
+  <line class="grid" x1="367.5" y1="64" x2="367.5" y2="346"/>
+  <text class="note" x="367.5" y="362" text-anchor="middle">2.0 s</text>
+  <line class="grid" x1="465.0" y1="64" x2="465.0" y2="346"/>
+  <text class="note" x="465.0" y="362" text-anchor="middle">4.0 s</text>
+  <line class="grid" x1="562.5" y1="64" x2="562.5" y2="346"/>
+  <text class="note" x="562.5" y="362" text-anchor="middle">6.0 s</text>
+  <line class="grid" x1="660.0" y1="64" x2="660.0" y2="346"/>
+  <text class="note" x="660.0" y="362" text-anchor="middle">8.0 s</text>
+  <line class="axis" x1="270" y1="64" x2="270" y2="346"/>
+  <text class="lab" x="258" y="84.0" text-anchor="end">New file on the PC → server</text>
+  <path class="s1" d="M270,70 H539.0 Q543.0,70 543.0,74 V84 Q543.0,88 539.0,88 H270 Z"><title>New file on the PC → server — seconds: 5.6 s</title></path>
+  <text class="val" x="549.0" y="83.5">5.6 s</text>
+  <text class="lab" x="258" y="120.0" text-anchor="end">New file on the server → PC</text>
+  <path class="s1" d="M270,106 H568.25 Q572.25,106 572.25,110 V120 Q572.25,124 568.25,124 H270 Z"><title>New file on the server → PC — seconds: 6.2 s</title></path>
+  <text class="val" x="578.2" y="119.5">6.2 s</text>
+  <text class="lab" x="258" y="156.0" text-anchor="end">Changed on the server → PC</text>
+  <path class="s1" d="M270,142 H441.5 Q445.5,142 445.5,146 V156 Q445.5,160 441.5,160 H270 Z"><title>Changed on the server → PC — seconds: 3.6 s</title></path>
+  <text class="val" x="451.5" y="155.5">3.6 s</text>
+  <text class="lab" x="258" y="192.0" text-anchor="end">Deleted on the server → PC</text>
+  <path class="s1" d="M270,178 H417.125 Q421.125,178 421.125,182 V192 Q421.125,196 417.125,196 H270 Z"><title>Deleted on the server → PC — seconds: 3.1 s</title></path>
+  <text class="val" x="427.1" y="191.5">3.1 s</text>
+  <text class="lab" x="258" y="228.0" text-anchor="end">Deleted on the PC → server</text>
+  <path class="s1" d="M270,214 H490.25 Q494.25,214 494.25,218 V228 Q494.25,232 490.25,232 H270 Z"><title>Deleted on the PC → server — seconds: 4.6 s</title></path>
+  <text class="val" x="500.2" y="227.5">4.6 s</text>
+  <text class="lab" x="258" y="264.0" text-anchor="end">Conflict resolved (both kept)</text>
+  <path class="s1" d="M270,250 H358.625 Q362.625,250 362.625,254 V264 Q362.625,268 358.625,268 H270 Z"><title>Conflict resolved (both kept) — seconds: 1.9 s</title></path>
+  <text class="val" x="368.6" y="263.5">1.9 s</text>
+  <text class="lab" x="258" y="300.0" text-anchor="end">Word opened → locked on the server</text>
+  <path class="s1" d="M270,286 H426.875 Q430.875,286 430.875,290 V300 Q430.875,304 426.875,304 H270 Z"><title>Word opened → locked on the server — seconds: 3.3 s</title></path>
+  <text class="val" x="436.9" y="299.5">3.3 s</text>
+  <text class="lab" x="258" y="336.0" text-anchor="end">Word closed → lock released</text>
+  <path class="s1" d="M270,322 H436.625 Q440.625,322 440.625,326 V336 Q440.625,340 436.625,340 H270 Z"><title>Word closed → lock released — seconds: 3.5 s</title></path>
+  <text class="val" x="446.6" y="335.5">3.5 s</text>
+  <text class="note" x="16" y="392">BENCHMARKS.md (scopy 0.17–0.18). Renames and moves travel as moves: nothing is sent again.</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 524" width="780" height="524" role="img" aria-labelledby="t s">
+  <title id="t">The same 19.1 GB test set (85,513 files) over scopy's versions</title><desc id="s">“Client done” = all data with the receiver (RAM staging since 0.6); “on disk” = written and flushed.</desc>
+
+  <style>
+    .surface { fill: none; }
+    .title { font: 700 19px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .sub { font: 400 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    .lab { font: 500 13.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .val { font: 600 12.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #0b0b0b; }
+    .note { font: 400 11.5px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #6b6a66; }
+    .grid { stroke: #e4e3df; stroke-width: 1; }
+    .axis { stroke: #b9b8b2; stroke-width: 1; }
+    .s1 { fill: #2a78d6; } .s2 { fill: #eb6834; }
+    .ref { stroke: #52514e; stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .reflab { font: 600 12px system-ui, "Segoe UI", Inter, Arial, sans-serif; fill: #52514e; }
+    @media (prefers-color-scheme: dark) {
+      .title, .lab, .val { fill: #f0efec; } .sub { fill: #c3c2b7; } .note { fill: #9e9d96; }
+      .grid { stroke: #33332f; } .axis { stroke: #5a5953; }
+      .s1 { fill: #3987e5; } .s2 { fill: #d95926; }
+      .ref { stroke: #c3c2b7; } .reflab { fill: #c3c2b7; }
+    }
+  </style>
+
+  <rect class="surface" width="780" height="524"/>
+  <text class="title" x="16" y="30">The same 19.1 GB test set (85,513 files) over scopy's versions</text>
+  <text class="sub" x="16" y="52">“Client done” = all data with the receiver (RAM staging since 0.6); “on disk” = written and flushed.</text>
+  <rect class="s1" x="16" y="64" width="14" height="14" rx="3"/>
+  <text class="lab" x="36" y="76">client done</text>
+  <rect class="s2" x="163" y="64" width="14" height="14" rx="3"/>
+  <text class="lab" x="183" y="76">on disk</text>
+  <line class="grid" x1="200.0" y1="82" x2="200.0" y2="468"/>
+  <text class="note" x="200.0" y="484" text-anchor="middle">0</text>
+  <line class="grid" x1="292.0" y1="82" x2="292.0" y2="468"/>
+  <text class="note" x="292.0" y="484" text-anchor="middle">2:00 min</text>
+  <line class="grid" x1="384.0" y1="82" x2="384.0" y2="468"/>
+  <text class="note" x="384.0" y="484" text-anchor="middle">4:00 min</text>
+  <line class="grid" x1="476.0" y1="82" x2="476.0" y2="468"/>
+  <text class="note" x="476.0" y="484" text-anchor="middle">6:00 min</text>
+  <line class="grid" x1="568.0" y1="82" x2="568.0" y2="468"/>
+  <text class="note" x="568.0" y="484" text-anchor="middle">8:00 min</text>
+  <line class="grid" x1="660.0" y1="82" x2="660.0" y2="468"/>
+  <text class="note" x="660.0" y="484" text-anchor="middle">10:00 min</text>
+  <line class="axis" x1="200" y1="82" x2="200" y2="468"/>
+  <text class="lab" x="188" y="112.0" text-anchor="end">0.3</text>
+  <path class="s2" d="M200,108 H624.5666666666666 Q628.5666666666666,108 628.5666666666666,112 V122 Q628.5666666666666,126 624.5666666666666,126 H200 Z"><title>0.3 — on disk: 9:19 min</title></path>
+  <text class="val" x="634.6" y="121.5">9:19 min</text>
+  <text class="lab" x="188" y="168.0" text-anchor="end">0.4</text>
+  <path class="s2" d="M200,164 H494.23333333333335 Q498.23333333333335,164 498.23333333333335,168 V178 Q498.23333333333335,182 494.23333333333335,182 H200 Z"><title>0.4 — on disk: 6:29 min</title></path>
+  <text class="val" x="504.2" y="177.5">6:29 min</text>
+  <text class="lab" x="188" y="224.0" text-anchor="end">0.5 (source in RAM)</text>
+  <path class="s2" d="M200,220 H296.43333333333334 Q300.43333333333334,220 300.43333333333334,224 V234 Q300.43333333333334,238 296.43333333333334,238 H200 Z"><title>0.5 (source in RAM) — on disk: 2:11 min</title></path>
+  <text class="val" x="306.4" y="233.5">2:11 min</text>
+  <text class="lab" x="188" y="280.0" text-anchor="end">0.6 (RAM staging)</text>
+  <path class="s1" d="M200,256 H221.3 Q225.3,256 225.3,260 V270 Q225.3,274 221.3,274 H200 Z"><title>0.6 (RAM staging) — client done: 33 s</title></path>
+  <text class="val" x="231.3" y="269.5">33 s</text>
+  <path class="s2" d="M200,276 H309.4666666666667 Q313.4666666666667,276 313.4666666666667,280 V290 Q313.4666666666667,294 309.4666666666667,294 H200 Z"><title>0.6 (RAM staging) — on disk: 2:28 min</title></path>
+  <text class="val" x="319.5" y="289.5">2:28 min</text>
+  <text class="lab" x="188" y="336.0" text-anchor="end">0.7 (stage auto)</text>
+  <path class="s1" d="M200,312 H219.76666666666665 Q223.76666666666665,312 223.76666666666665,316 V326 Q223.76666666666665,330 219.76666666666665,330 H200 Z"><title>0.7 (stage auto) — client done: 31 s</title></path>
+  <text class="val" x="229.8" y="325.5">31 s</text>
+  <path class="s2" d="M200,332 H248.9 Q252.9,332 252.9,336 V346 Q252.9,350 248.9,350 H200 Z"><title>0.7 (stage auto) — on disk: 1:09 min</title></path>
+  <text class="val" x="258.9" y="345.5">1:09 min</text>
+  <text class="lab" x="188" y="392.0" text-anchor="end">0.8.3</text>
+  <path class="s1" d="M200,368 H208.26666666666668 Q212.26666666666668,368 212.26666666666668,372 V382 Q212.26666666666668,386 208.26666666666668,386 H200 Z"><title>0.8.3 — client done: 16 s</title></path>
+  <text class="val" x="218.3" y="381.5">16 s</text>
+  <path class="s2" d="M200,388 H271.1333333333333 Q275.1333333333333,388 275.1333333333333,392 V402 Q275.1333333333333,406 271.1333333333333,406 H200 Z"><title>0.8.3 — on disk: 1:38 min</title></path>
+  <text class="val" x="281.1" y="401.5">1:38 min</text>
+  <text class="lab" x="188" y="448.0" text-anchor="end">0.11 (TLS, as the user)</text>
+  <path class="s1" d="M200,424 H209.8 Q213.8,424 213.8,428 V438 Q213.8,442 209.8,442 H200 Z"><title>0.11 (TLS, as the user) — client done: 18 s</title></path>
+  <text class="val" x="219.8" y="437.5">18 s</text>
+  <path class="s2" d="M200,444 H248.13333333333333 Q252.13333333333333,444 252.13333333333333,448 V458 Q252.13333333333333,462 248.13333333333333,462 H200 Z"><title>0.11 (TLS, as the user) — on disk: 1:08 min</title></path>
+  <text class="val" x="258.1" y="457.5">1:08 min</text>
+  <text class="note" x="16" y="514">0.3–0.6: two other servers; 0.7+: two test VMs. 10 Gbit LAN. Before 0.6 the client waited for the disk.</text>
+</svg>
